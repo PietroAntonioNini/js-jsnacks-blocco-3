@@ -16,12 +16,15 @@ function mergeArrays(arr1, arr2) {
 
 
 //se avessimo ad esempio arr1 = 1,2,3
-//E arr2 = a,b,c
-
 const array1 = [1, 2, 3];
-const array2 = ['a', 'b', 'c'];
+document.querySelector("#arr1").innerText = array1;
 
+//E arr2 = a,b,c
+const array2 = ['a', 'b', 'c'];
+document.querySelector("#arr2").innerText = array2;
+
+//stampo
 const merged = mergeArrays(array1, array2);
-console.log(merged);
+document.querySelector("#mergedArray").innerText = merged;
 
   

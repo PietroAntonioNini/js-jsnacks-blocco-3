@@ -20,15 +20,18 @@ function cutArray(array, posizioneMin, posizioneMax) {
     const newArray = [];
 
     //ciclo for per scorrere l'array originale
-    for (let i = posizioneMin; i < posizioneMax; i++) {
+    for (let i = posizioneMin; i <= posizioneMax; i++) {
 
         //aggiungo degli elementi all'interno del nuovo array
-        nuovoArray.push(array[i]);
+        newArray.push(array[i]);
     }
 
-    return nuovoArray;
+    return newArray;
 }
 
+const result = cutArray(arrayNumbers, 2, 4);
+console.log(result);
 
-
-  
+//stampo in pagina
+document.querySelector("#array").innerText = `Array originale: ${arrayNumbers}`;
+document.querySelector("#new").innerText = `Array nuovo: ${result}`;

@@ -17,9 +17,18 @@ function cutArray(array, posizioneMin, posizioneMax) {
     }
 
     //creo un array vuoto
-    
+    const newArray = [];
 
+    //ciclo for per scorrere l'array originale
+    for (let i = posizioneMin; i < posizioneMax; i++) {
 
+        //aggiungo degli elementi all'interno del nuovo array
+        nuovoArray.push(array[i]);
+    }
+
+    return nuovoArray;
 }
+
+
 
   

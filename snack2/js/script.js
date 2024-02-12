@@ -14,4 +14,14 @@ function mergeArrays(arr1, arr2) {
     return mergedArray;
 }
 
+
+//se avessimo ad esempio arr1 = 1,2,3
+//E arr2 = a,b,c
+
+const array1 = [1, 2, 3];
+const array2 = ['a', 'b', 'c'];
+
+const merged = mergeArrays(array1, array2);
+console.log(merged);
+
   
